@@ -29,8 +29,8 @@ chrome.contextMenus.onClicked.addListener(async (info) => {
 
     console.log("✅ OAuth Token Acquired:", token);
 
-    const sheetId = "1CjVD9gAAdfiqWc5kxVX87zigOM_8Oz5SCeQft-TaWHM";
-    const range = "VocabUp!A:C";
+    const sheetId = "YOUR-SHEET-ID";
+    const range = "SHEET1!A:C";
     const values = [[selectedWord, meaning, sentence, explanation]];
     const body = { values };
 
@@ -55,7 +55,7 @@ chrome.contextMenus.onClicked.addListener(async (info) => {
 
 // 🔥 Groq AI Function
 async function fetchVocabFromGroq(word) {
-  const groqApiKey = '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';
+  const groqApiKey = 'YOUR-GROQ-API-KEY';
 
   const prompt = `For the word "${word}", respond ONLY in this CSV format:
 Meaning (max 5 words), Simple Sentence, Short Explanation
