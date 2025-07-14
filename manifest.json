@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "VocabUp",
+  "version": "1.0",
+  "description": "Save words and meanings to Google Sheets easily.",
+  "permissions": ["identity", "contextMenus"],
+  "oauth2": {
+    "client_id": "605886822474-9nsg0tfjd8uulvc27q55q8imk0tqt6q7.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/spreadsheets"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "VocabUp"
+  },
+  "icons": {
+  "16": "icon16.png",
+  "48": "icon48.png",
+  "128": "icon128.png"
+}
+
+}
